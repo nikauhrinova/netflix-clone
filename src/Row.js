@@ -11,17 +11,15 @@ function Row({ title, fetchUrl, isLargeRow }) {
     useEffect(() => {
         async function fetchData() {
             const request = await axios.get(fetchUrl);
-            console.log(request);
             setMovies(request.data.results);
             return request;
         }
         fetchData();
     }, [fetchUrl]);
 
-
     return (
         <div className="row">
-            <h2>{title}</h2>
+            <h2 className="row_name">{title}</h2>
             <div className="row_posters">
                 {movies.map(movie => (
                     <img

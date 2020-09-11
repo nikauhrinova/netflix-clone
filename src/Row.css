@@ -1,5 +1,5 @@
 .row{
-    margin-left: 20px;
+    margin-left: 1%;
 }
 
 .row_posters{
@@ -16,7 +16,7 @@
 .row_poster{
     object-fit: contain;
     width: 100%;
-    max-height: 150px;
+    max-height: 10em;
     transition: transform 450ms;
     margin-right: 10px;
 }
@@ -37,4 +37,9 @@
 .row_posterLarge:hover{
     transform: scale(1.09);
     opacity: 1;
+}
+
+.row_name{
+    color: white;
+    padding-left: 1rem;
 }
